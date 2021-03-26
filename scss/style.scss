@@ -1,9 +1,10 @@
-@import "./base/_reset.scss";
+@import "./utils/variables";
 
-@import "./components/_buttons.scss";
+@import "./base/reset";
 
-@import "./layout/_header.scss";
-@import "./layout/_main.scss";
-@import "./layout/_footer.scss";
+@import "./components/buttons";
 
-@import "./utils/_variables.scss";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+

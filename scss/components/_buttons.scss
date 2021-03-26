@@ -1,0 +1,21 @@
+.btn-blue, .btn-gray {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-blue {
+    background: $blue;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.btn-gray {
+    background: $light-gray;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 3px;
+}
