@@ -1,20 +1,64 @@
 header {
     height: 3rem;
+    width: 100%;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
 
-    a {
+    position: absolute;
+    top: .5rem;
 
+    padding: 0 1rem;
+
+    .links {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            font-size: 13px;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
-    svg {
-        max-height: 2rem;
-    }
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
 
-    .sign-in-btn {
-        
-    }
+        .icon {
+            min-height: 48px;
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border-radius: 50%;
+            cursor: pointer;
 
+            &:hover {
+                background: rgba(60,64,67,0.08);
+            }
+
+            svg {
+                max-height: 1.5rem;
+                fill: #5f6368;
+            }
+        }
+    
+        .sign-in-btn {
+            
+            &:hover {
+                opacity: .75;
+                box-shadow: 0 1px 2px 0 $blue-transparent,
+                1px 0 2px 0 $blue-transparent,
+                0px -1px 2px 0 $blue-transparent,
+                -1px 0 2px 0 $blue-transparent;
+            }
+        }
+    }
 }
